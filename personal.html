@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    project-status {
+      display: block;
+      padding: 5px;
+      border: 2px;
+    }
+
+    project-status[status="complete"] {
+      background-color: lightgreen; 
+    }
+
+    project-status[status="ongoing"] {
+      background-color: lightcyan;
+    }
+
+    project-status[status="not-started"] {
+      background-color: #797474; 
+    }
+
+    project-status[status="still-planning"] {
+      background-color: #d17595; 
+    }
+
+
+    
+  </style>
+</head>
+
+<body>
+  <header>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">&#9776;</label>
+    
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="professional.html">Professional</a>
+      <a href="personal.html">Personal</a>
+      <a href="contact.html">Contact</a>
+      <a href="experiment.html">Experiment</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </header>
+
+<main>
+  <h1><i>My Personal Work</i></h1>
+
+  <h2>My Academic Calendar</h2>
+  <p>I currently study at UC San Diego. Here is a list of all the courses I took and will take in the course of my program.</p>
+    
+  <div class="academic_calendar_container">
+    <table class="academic_calendar">
+      <caption>UC San Diego Academic History</caption>
+  
+      <colgroup>
+          <col class="Year">
+          <col span="4" class="Quarter">
+      </colgroup>
+  
+      <thead>
+          <tr>
+              <th>Year</th>
+              <th>Fall Quarter</th>
+              <th>Winter Quarter</th>
+              <th>Spring Quarter</th>
+              <th>Summer Quarter</th>
+          </tr>
+      </thead>
+  
+      <tbody>
+          <tr>
+              <td>2021-2022</td>
+              <td>CHEM 4<br>CSE 8A<br>MATH 4C</td>
+              <td>BILD 1<br>CSE 8B<br>HUM 1<br>MATH 20A</td>
+              <td>CSE 12<br>15L<br>HUM 2</td>
+              <td>HUM 3GS<br>VIS 122GS<br>HUM 5<br>MATH 20B</td>
+          </tr>
+  
+          <tr>
+              <td>2022-2023</td>
+              <td>CSE 20<br>CSE 30<br>MATH 20C<br>PHIL 12</td>
+              <td>CSE 140<br>CSE 140L<br>MATH 18<br>PHYS 7</td>
+              <td>CSE 141<br>CSE 141L<br>SIO 10<br>SIO 128</td>
+              <td></td>
+          </tr>
+  
+          <tr>
+              <td>2023-2024</td>
+              <td>COGS 3<br>CSE 21<br>CSE 198<br>ENG 10</td>
+              <td>CSE 105<br>MATH 183</td>
+              <td>CSE 100<br>ECE 196<br>EDS 124AR</td>
+              <td>CSE 101<br>CSE 151A</td>
+          </tr>
+  
+          <tr>
+              <td>2024-2025</td>
+              <td>CSE 110<br>CSE 132A</td>
+              <td>CSE 130<br>CSE 134B<br>CSE 167<br>EDS 124BR</td>
+              <td></td>
+              <td></td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <hr>
+
+  <form class="section-selector">
+    <label for="sectionSelect">Go to section:</label>
+    <select id="sectionSelect">
+        <option value="#">Select...</option>
+        <optgroup label="Projects">
+            <option value="#Teaching">Teaching</option>
+            <option value="#GameDevelopment">Game Development</option>
+            <option value="#Graphics">Graphics</option>
+        </optgroup>
+        <optgroup label="Recreational">
+            <option value="#Youtube">Youtube</option>
+            <option value="#Gaming">Gaming</option>
+        </optgroup>
+    </select>
+  </form>
+  
+  <section>
+    <section id="Teaching" class="personal">
+      <picture>
+        <source srcset="images/teaching_large.jpg" media="(min-width: 1400px)">
+        <source srcset="images/teaching_medium.jpg" media="(min-width: 800px)">
+        <img src="images/teaching_small.jpg" alt="Someone teaching programming on a board to a student.">
+      </picture>
+      <div class="section-content">
+        <h2>Teaching</h2>
+        <p>One of my recent career ideas is becoming a CS teacher for K-12. I would love to teach the youth Computer Science the same way my CS teachers taught me, which led me to where I am today. In my pursuits I have taken three courses on CS teaching (CSE 198, EDS 124AR, EDS 124BR). </p>
+        <p>In CSE 198, I got to make a lesson plan introducing HTML, CSS, and JavaScript for K-12 students. I even got to teach K-12 students my lesson plan, which was amazing to see my work get to the students. </p><br>
+      </div>
+    </section>
+    
+    <section id="GameDevelopment" class="personal">
+      <picture>
+        <source srcset="images/gamedev_large.jpg" media="(min-width: 1400px)">
+        <source srcset="images/gamedev_medium.jpg" media="(min-width: 800px)">
+        <img src="images/gamedev_small.jpg" alt="Game Dev setup.">
+      </picture>
+      <div class="section-content">
+        <h2>Game Development</h2>
+        <p>I love the idea of programming games on the side. I have been interested in starting a mobile game project in the near future for example. The idea of a fun little mobile game to pass the time and share with my friends sounds so exciting.</p>
+        <p>More ambitious ideas involves developing a small JRPG for a game jam, practicing developing music, art, and game mechanics in small exercises.</p>
+        <p>I have a history in game development through working with friends on a small JRPG, however it didn't last too long. However I got to work on art, game mechanics, and was creating concepts for the music.</p><br>
+      </div>
+    </section>
+    
+    <section id="Graphics" class="personal">
+      <picture>
+        <source srcset="images/graphics_large.jpg" media="(min-width: 1400px)">
+        <source srcset="images/graphics_medium.jpg" media="(min-width: 800px)">
+        <img src="images/graphics_small.jpg" alt="Someone working on graphics programming.">
+      </picture>
+      <div class="section-content">
+        <h2>Graphics</h2>
+        <p>I am currently learning Intro to Computer Graphics in CSE 167. I aspire to be able to learn enough to take 3D User Interfaces and Advanced Computer Graphics. With these courses, I could open up more opportunities for myself.</p><br>
+      </div>
+    </section>
+    
+    <section id="Youtube" class="personal">
+      <picture>
+        <source srcset="images/youtube_large.jpg" media="(min-width: 1400px)">
+        <source srcset="images/youtube_medium.jpg" media="(min-width: 800px)">
+        <img src="images/youtube_small.jpg" alt="A Youtube Setup.">
+      </picture>
+      <div class="section-content">
+        <h2>Youtube</h2>
+        <p>I have small ideas for youtube videos that I would love to produce. These videos would involve my interests, such as video game tributes, analysis, and reviews.</p><br>
+      </div>
+    </section>
+    
+    <section id="Gaming" class="personal">
+      <picture>
+        <source srcset="images/gaming_large.jpg" media="(min-width: 1400px)">
+        <source srcset="images/gaming_medium.jpg" media="(min-width: 800px)">
+        <img src="images/gaming_small.jpg" alt="A Gaming Setup.">
+      </picture>
+      <div class="section-content">
+        <h2>Gaming</h2>
+        <p>Personally, I love playing games. I think they are an amazing way to de-stress and make friends. Currently, I aspire to rank up in my current favorite game, Marvel Rivals. I also can't wait to play new games such as Star Wars Jedi Survivor, God Of War Ragnarok, and Spider-man 2!</p><br>
+        <aside>
+          <h4>Favorite Games</h4>
+          <p>Here are some of my favorite games!</p>
+          <ul>
+            <li>Pokemon Black and White 2</li>
+            <li>Overwatch 2</li>
+            <li>Fire Emblem Path of Radiance</li>
+            <li>Stardew Valley</li>
+            <li>Star Wars Jedi: Fallen Order </li>
+            <li>Minecraft</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </section>
+</main>
+<script src="settings.js"></script>
+</body>
+</html>

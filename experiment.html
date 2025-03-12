@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiment</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="professional.html">Professional</a>
+      <a href="personal.html">Personal</a>
+      <a href="contact.html">Contact</a>
+      <a href="experiment.html">Experiment</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1><i>Experiment Work</i></h1>
+    
+    <section>
+      <h2>Text Tag Experiments</h2>
+      <del>Strike through a line with del tag!</del>
+      <ins>Insert new text with insert!</ins>
+      <br>
+      <dl>
+        <dt>Define term tag</dt>
+        <dd>Description tag</dd>
+      </dl>
+      <br>
+      <p>
+        <strong>HTML (<dfn id="html_link">Hypertext Markup Language</dfn>)</strong> a standardized system for tagging text files to achieve font, color, graphic, and hyperlink effects on World Wide Web pages.
+      </p>
+      <br>
+      <p>We may span this color <span style="color:blue">blue da ba di da ba di</span></p>
+      <br>
+      <p>I love <code><a href="#html_link">HTML</a></code></p>
+      <br>
+      <p>Remember to use <i>italics</i></p>
+      <br>
+      <p>You <em>have</em> to hurry up!</p>
+      <br>
+      <pre>
+        pre is    weird
+        lets me      do weird
+        weird things like this
+      </pre>
+      <br>
+      <p>Future javascript to add an easter egg when the <kbd>t</kbd> key is pressed</p>
+    </section>
+    <hr>
+    <section>
+      <h2>Here is a form with input and datalist, which doesn't fit into this portfolio</h2>
+
+      <!--I have no where to put a textarea-->
+      <h2>Here is a form with textarea, since I cannot find a use for it in my portfolio.</h2>
+      <form>
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Type your message here..."></textarea>
+        <br><br>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <hr>
+    <section>
+      <h2>Here is a future quote I would like to add!</h2>
+      <figure>
+        <blockquote>
+          <p>The mystery of life isn't a problem to solve, but a reality to experience.</p>
+        </blockquote>
+        <figcaption>
+          from <cite>Dune</cite> by Frank Herbert
+        </figcaption>
+      </figure>
+    </section>
+  
+    <section>
+      <h2>I have added a custom element that outputs hello world into the console.</h2>
+      <hello-world></hello-world>
+      <script>
+          // Define a custom element called 'hello-world'
+          class HelloWorld extends HTMLElement {
+              constructor() {
+                  super();
+                  // Log 'Hello World!' to the console when the element is created
+                  console.log('Hello World!');
+              }
+          }
+    
+          // Register the custom element
+          customElements.define('hello-world', HelloWorld);
+      </script>
+      <noscript>You do not have JavaScript on or your browser does not support JS5.</noscript>
+    </section>
+  </main>
+  <script src="settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark light" />
+	<title>Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">&#9776;</label>
+    
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="professional.html">Professional</a>
+      <a href="personal.html">Personal</a>
+      <a href="contact.html">Contact</a>
+      <a href="experiment.html">Experiment</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+	</header>
+
+	<main>
+    <div class="index_container">
+      <div class="Header-renders">
+        <canvas id="myCanvas"></canvas>
+        <script>
+          const canvas = document.getElementById("myCanvas");
+          const ctx = canvas.getContext("2d");
+  
+          ctx.fillStyle = "#0F9FAF";  // Set fill color to scarlet (not a standard color)
+          ctx.font = "30px Arial";   // Set font size and style
+          ctx.fillText("Hi, Welcome To My", 10, 25); // Draw the filled letter "A"
+        </script>
+        <noscript>You do not have JavaScript on or your browser does not support JS5.</noscript>
+        <svg width="300" height="75" viewBox=" 0 0 300 100">
+          <!-- Define a Gradient -->
+          <defs>
+            <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#0F9FAF; stop-opacity:1"/>  <!-- Orange-Red -->
+              <stop offset="100%" style="stop-color:#0FFFFF; stop-opacity:1"/>  <!-- Blue -->
+            </linearGradient>
+          </defs>
+        
+          <!-- Display Text -->
+          <text x="20" y="50" font-size="50" font-weight="bold" fill="url(#textGradient)" font-family="Arial, sans-serif">
+            Portfolio
+          </text>
+        </svg>
+      </div>
+
+      <picture>
+        <source srcset="images/me.webp" type="image/webp" media="(min-width:800px)" />
+        <source srcset="images/me_small.webp" type="image/webp" />
+        <source srcset="images/me.jpg" media="(min-width:800px)" />
+        <img class="homePic" src="images/me_small.jpg" alt="Picture of me, Alex Paz" />
+      </picture>
+    </div>
+      
+    <h4>Bio</h4>
+    <p>Hi, my name is <b>Alex Paz</b>, a <b>Computer Scientist!</b></p>
+	</main>
+
+	<footer>
+    <address>
+      Alex Paz<br> 
+      Contact me at:<br>
+      linkedin.com/in/alex-paz-3b6428278<br>
+      j6paz@ucsd.edu<br>
+      Based in La Jolla, CA<br>
+      USA
+      </address>
+	</footer>
+  <script src="settings.js"></script>
+</body>
+</html>

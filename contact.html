@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="styles.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="professional.html">Professional</a>
+      <a href="personal.html">Personal</a>
+      <a href="contact.html">Contact</a>
+      <a href="experiment.html">Experiment</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Contact</h1>
+
+    
+    <section class="contact">
+      <h2>Contact Me Here:</h2>
+      <form action="https://httpbin.org/post" method="POST" id="comment-form">
+
+        <div class="form-item-1">
+          <label for="name">Name <span>*</span>
+          <input type="text" id="name" name="name" class="form-text" placeholder="Type your full name here" maxlength="40" required>
+          <output for="name" id="error-name" class="error"></output>
+          </label>
+        </div>
+        
+        <div class="form-item-1">
+          <label for="email">Email <span>*</span>
+          <input type="email" id="email" name="email" class="form-email" placeholder="Type your email here" minlength="4" maxlength="256" required>
+          </label>
+        </div>
+
+        <div class="form-item-1">
+          <label for="occupation">Occupation
+          <input type="text" id="occupation" name="occupation" class="form-text" placeholder="Include your occupation (optional)" maxlength="40">
+          </label>
+        </div>
+
+        <div class="form-item-1">
+          <label for="title">Comment Title <span>*</span>
+          <input type="text" id="title" name="title" class="form-text" placeholder="Include a title" maxlength="40" required>
+          <output for="title" id="error-title" class="error"></output>
+          </label> 
+        </div>
+        
+        <div class="form-item-2">
+          <label for="comments">Comments <span>*</span>
+          <textarea id="comments" name="comments" class="form-text" placeholder="Type your comment here" maxlength="800" rows="10"></textarea>
+          <output id="remaining-num" class="remaining-count">800</output>
+          <output id="error-comment" class="error"></output>
+          
+          </label>
+        </div>
+        
+        <input type="hidden" id="hidden_bot" name="possible_bot" value="true">
+
+        <input type="hidden" id="form-errors" name="form-errors" />
+
+        <button type="submit">Submit</button>
+
+        <div id="error-list" class="form-errors form-item-2"></div>
+      </form>
+    </section>
+    
+    <address>
+      Alex Paz<br> 
+      Contact me at:<br>
+      linkedin.com/in/alex-paz-3b6428278<br>
+      j6paz@ucsd.edu<br>
+      Based in La Jolla, CA<br>
+      USA
+    </address>
+  </main>
+  <script src="contact_form.js"></script>
+  <script src="settings.js"></script>
+</body>
+</html>

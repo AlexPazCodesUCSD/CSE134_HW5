@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="styles-no-js.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="professional.html">Professional</a>
+      <a href="personal.html">Personal</a>
+      <a href="contact.html">Contact</a>
+      <a href="experiment.html">Experiment</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Contact</h1>
+
+    
+    <section class="contact">
+      <h2>Contact Me Here:</h2>
+      <form action="https://httpbin.org/post" method="POST" >
+
+        <div class="form-item-1">
+          <label for="name">Name <span>*</span>
+          <input type="text" id="name" name="name" pattern="^[a-zA-Z0-9 ]+$" placeholder="Type your full name here" minlength="2" maxlength="40" required>
+          <output for="name" id="error-message" class="error">Error, invalid name</output>
+          <output for="name" id="info-message" class="info">Tell me your name.</output>
+          </label>
+        </div>
+        
+        <div class="form-item-1">
+          <label for="email">Email <span>*</span>
+          <input type="email" id="email" name="email" placeholder="Type your email here" minlength="4" maxlength="256" required>
+          <output for="email" id="error-message" class="error">Error, invalid email</output>
+          <output for="email" id="info-message" class="info">Please type in a valid email.</output>
+          </label>
+        </div>
+
+        <div class="form-item-1">
+          <label for="occupation">Occupation
+          <input type="text" id="occupation" name="occupation" pattern="^[a-zA-Z0-9 ]+$" placeholder="Include your occupation (optional)" minlength="2" maxlength="40">
+          <output for="occupation" id="error-message" class="error">Error, invalid occupation</output>
+          <output for="occupation" id="info-message" class="info">Tell may tell me your occupation.</output>
+          </label>
+        </div>
+
+        <div class="form-item-1">
+          <label for="title">Comment Title <span>*</span>
+          <input type="text" id="title" name="title" placeholder="Include a title" pattern="^[a-zA-Z0-9 ]+$" 
+          minlength="2" maxlength="40" required>
+          <output for="title" id="error-message" class="error">Error, invalid title</output>
+          <output for="title" id="info-message" class="info">Give your message a title.</output>
+          </label> 
+        </div>
+        
+        <div class="form-item-2">
+          <label for="comments">Comments <span>*</span>
+          <input id="comments" name="comments" placeholder="Type your comment here" minlength="1" 
+          maxlength="800" pattern="^[a-zA-Z0-9 ]+$"></input>
+          <output for="comments" id="error-message" class="error">Error, invalid comment</output>
+          </label>
+        </div>
+        
+        <input type="hidden" id="hidden_bot" name="possible_bot" value="true">
+
+        <button type="submit">Submit</button>
+        
+      </form>
+    </section>
+    
+    <address>
+      Alex Paz<br> 
+      Contact me at:<br>
+      linkedin.com/in/alex-paz-3b6428278<br>
+      j6paz@ucsd.edu<br>
+      Based in La Jolla, CA<br>
+      USA
+    </address>
+    
+    <audio src="sounds/hearthome.mp3" autoplay></audio>
+  </main>
+</body>
+</html>
