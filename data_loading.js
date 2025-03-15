@@ -1,4 +1,6 @@
 document.getElementById("load-local-button").addEventListener("click", localLoadProjectCards);
+document.getElementById("load-remote-button").addEventListener("click", remoteLoadProjectCards);
+
 const exampleProjects = [
   {
     title: "FreshFridge",
@@ -54,5 +56,23 @@ function localLoadProjectCards() {
 
   catch (err) {
     console.error("JSON was invalid.", err);
+  }
+}
+
+async function remoteLoadProjectCards() {
+  try {
+    const response = await fetch('https://my-json-server.typicode.com/AlexPazCodesUCSD/hw5-myjson-repo/exampleProjects');
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const projects = await response.json();
+      renderProjectCards(projects);
+  }
+
+  catch (err){
+    console.error("JSON was invalid.", err);
+
   }
 }
