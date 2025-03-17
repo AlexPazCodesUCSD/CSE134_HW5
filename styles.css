@@ -252,6 +252,19 @@ input.invalid, textarea.invalid {
   border-radius: 3px;
 }
 
+ noscript {
+  display: block;
+  background-color: yellow;
+  color: black;
+  padding: 1em;
+  text-align: center;
+  width: 800px;
+  max-width: 75%;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 1em auto;
+}
+
 button {
   padding: 10px;
   background: #5a554c;
