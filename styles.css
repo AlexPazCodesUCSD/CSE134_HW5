@@ -261,8 +261,11 @@ button {
   font-size: 16px;
   cursor: pointer;
   max-width: 500px;
+  margin: 1em auto;
+}
+
+button.form-button {
   grid-column: span 2;
-  margin: 0 auto;
 }
 
 button#theme-button {
@@ -358,6 +361,14 @@ svg {
   background-color: var(--tab-background-color);
   border-radius: 2em;
   margin: 3em auto;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 50%;
+  max-width: 50%;
+  margin: 0em auto;
 }
 
 #project-card-container {
@@ -508,14 +519,13 @@ svg {
     border-radius: 1px;
   }
 
-  .project-card-container {
+  #project-card-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2em;
     width: 100%;
     margin: 3em auto;
     padding: 0em;
-    border: 1px solid black;
   }
 }
 
@@ -571,14 +581,21 @@ svg {
     width: 80%; 
   }
 
-  .project-card-container {
+  #project-card-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2em;
     width: 100%;
     margin: 1em auto;
     padding: 0em;
-    border: 1px solid black;
+  }
+
+  .button-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    max-width: 50%;
+    margin: 1em auto;
   }
 }
 

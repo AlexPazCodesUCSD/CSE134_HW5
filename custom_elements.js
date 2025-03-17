@@ -130,19 +130,12 @@ class ProjectCard extends HTMLElement {
           margin: 0 auto;
         }
 
-        #card-picture {
-        width: 400px;
-        height: 300px;
-        display: block;
-        }
-
         img {
           object-position: center;
           width: 100%;
           max-width: 100%; 
           height: auto;
           border-radius: 3em 3em 0em 0em;
-          object-fit: contain;
         }
 
         h2 {
